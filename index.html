@@ -12,14 +12,19 @@
     var images = [
       {title: 'City', filename: 'http://lorempixel.com/768/1024/city/'},
       {title: 'Cats', filename: 'http://lorempixel.com/768/1024/cats/'},
-      {title: 'Great nature events', filename: 'http://lorempixel.com/768/1024/sports/'},
+      {title: 'Sports', filename: 'http://lorempixel.com/768/1024/sports/'},
       {title: 'People', filename: 'http://lorempixel.com/768/1024/people/'},
+      {title: 'Abstract', filename: 'http://lorempixel.com/768/1024/abstract/'},
+      {title: 'Technics', filename: 'http://lorempixel.com/1024/768/technics/'},
+      {title: 'Food', filename: 'http://lorempixel.com/768/1024/food/'},
     ];
   </script>
 
+  <title></title>
+
   <script>
     $(function(){
-      $('header h1').html('<a href="' + url + '">' + sitename + '</a>');
+      $('header h1').html('<a target="_blank" href="' + url + '">' + sitename + '</a>');
 
       $.each(images, function(i, object){
         object.id = makeid();
@@ -57,6 +62,8 @@
           $('#select_image').val($('#content img:visible').attr('id'));
         }
       });
+
+      $('title').text(sitename);
     });
 
     function makeid()
