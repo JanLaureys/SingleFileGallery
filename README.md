@@ -1,4 +1,4 @@
-Design is Dead Audit tool
+Single File Gallery
 =========
 
-Little tool to show screenshots of a website that are audited.
+One html file for creating an image gallery from a bunch of pictures stored somewhere. Easily adjustable as well.
